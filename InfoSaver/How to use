@@ -1,0 +1,45 @@
+Using this module, you can easily save any information. Below are instructions for using the module:
+
+1. First you need to set the name of your program. This is necessary so that third-party programs
+ using this module do not conflict with yours.
+
+ To set a name, use: InfoSaver.saver.setAppName("Your App Name")
+
+You can set the program name only once
+
+2. To save information use: InfoSaver.saver.saveInfo("Base name", "Key name", "Key value")
+
+Base name - it is the name of the key category. It may be: "Accounts" or "Users"
+Key name - it is the name of the key in which the value will be stored. The key can be called "Username" or "Account Balance"
+Key value - it is the value to be stored in the key. It can be any information, variable, text. For example, if the name of the key
+ is “account balance”, then the key value will be a figure that shows the balance
+
+3. To edit information use: InfoSaver.saver.editInfo("Base name", "Key name", "New Value")
+
+
+Editing information is easy. You just need to specify the same
+data as when saving (base name and key name), and simply specify the new key value in the "new value".
+
+4. If you want to delete the key and its value, use: InfoSaver.saver.deleteInfo("Base name", "Key name")
+To delete a key, you need to specify the "Base name" and the name of the key that you want to delete
+
+5. This module has a function to clear the key value.
+ You need to specify the "Base name" and the name of the key. The key value will be set as "".
+ To use cleaning, use: InfoSaver.save.clearInfo("Base name", "Key name")
+
+
+To import a module, you must write
+import InfoSaver
+
+
+If you have not created a working folder for the module,
+the module will create it automatically. All keys and their values ​​will be stored in this folder.
+
+For the module to work, the "os" library is required!!!
+
+Enjoy!
+
+InfoSaver by MihlanDOta
+My E-Mail: mihlandota@gmail.com
+Coopyright 2020
+
